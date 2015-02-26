@@ -1,0 +1,7 @@
+Dependencies (Debian):
+
+$ sudo apt-get install libboost1.49-dev libbitcoin0
+$ instalar libczmq++
+$ make
+$ sudo make install ?
+
