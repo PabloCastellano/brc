@@ -23,6 +23,9 @@ transaction.
 If the transaction cannot be deserialized the daemon outputs "Bad stream"
 but does nothing further.
 
+Port 9112 will reply back with...
+
+
 You can change the ports in define.hpp
 
   $ ./brc -h
@@ -40,6 +43,7 @@ For testing see the test/ subdirectory.
   $ cd test/
   $ python listen.py &
   $ python poke.py
+  $ python connections.py
 
 And watch the output of the brc terminal.
 
