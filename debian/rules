@@ -12,15 +12,11 @@ else
   confflags += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
 endif
 
-confflags += --enable-leveldb
 confflags += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	autoreconf -i
-	./configure $(confflags) --prefix=/usr
-	touch configure-stamp
 
 build: build-arch
 
@@ -30,9 +26,6 @@ build-arch: configure-stamp build-arch-stamp
 build-arch-stamp:
 	dh_testdir
 	$(MAKE)
-ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
-	$(MAKE) check
-endif
 	touch build-arch-stamp
 
 build-indep: build-indep-stamp
