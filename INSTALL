@@ -1,7 +1,12 @@
+Dependencies:
+
+You need libbitcoin and libczmq++
+
+For detailed instructions see https://wiki.unsystem.net/en/index.php/Install_entire_toolchain
+
 Dependencies (Debian):
 
-$ sudo apt-get install libboost1.49-dev libbitcoin0
-$ instalar libczmq++
+$ sudo apt-get install libboost1.49-dev
 $ make
-$ sudo make install ?
+$ sudo make install
 
