@@ -1,12 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: libbitcoin
-Source: https://github.com/libbitcoin/libbitcoin
+Upstream-Name: brc
+Source: https://github.com/darkwallet/brc
 
 Files: *
-Copyright: 2011-2013 Amir Taaki (genjix) <genjix@riseup.net>
-           2011-2012 Kamil Domański (kdomanski)
-           2011 Jan Engelhardt (se7) <jengelh@medozas.de>
-           2011 Patrick Strateman (phantomcircuit)
+Copyright: 2014-2015 Amir Taaki (genjix) <genjix@riseup.net>
 License: AGPL3
  Note that this is AGPLv3 with additional permissions.
  .
